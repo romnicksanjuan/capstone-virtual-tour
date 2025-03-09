@@ -4,15 +4,14 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephoneFill, BsGlobe2 } from "react-icons/bs";
 import { FaMobileRetro } from "react-icons/fa6";
-import { FormEvent, useState } from 'react';
+import {  useState } from 'react';
 import emailjs from 'emailjs-com'
 
 const Contact = () => {
     const [name, setName] = useState<string>("")
     const [email, setEmail] = useState<string>("")
-    const [number, setNumber] = useState<string>("")
+    // const [number, setNumber] = useState<string>("")
     const [message, setMessage] = useState<string>("")
-
 
 
     const handleSubmit = () => {
