@@ -2,10 +2,39 @@
 import NavBar from './navigation/NavBar'
 import { FaFacebookSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { BsFillTelephoneFill ,BsGlobe2} from "react-icons/bs";
+import { BsFillTelephoneFill, BsGlobe2 } from "react-icons/bs";
 import { FaMobileRetro } from "react-icons/fa6";
+import { FormEvent, useState } from 'react';
+import emailjs from 'emailjs-com'
 
 const Contact = () => {
+    const [name, setName] = useState<string>("")
+    const [email, setEmail] = useState<string>("")
+    const [number, setNumber] = useState<string>("")
+    const [message, setMessage] = useState<string>("")
+
+
+
+    const handleSubmit = () => {
+        // e.preventDefault()
+        console.log(name)
+        console.log(email)
+        console.log(message)
+
+        emailjs.send("service_o3jlica", "template_2a9i2tr", {
+            from_name: name,
+            from_email: email,
+            message: message,
+        },
+            "qF0SPfgPtEeerxnOs"
+        )
+            .then((res) => console.log(res.status))
+            .catch((err) => console.log(err));
+
+    }
+
+
+
     return (
         <div className='w-full h-auto'>
             <NavBar />
@@ -48,21 +77,16 @@ const Contact = () => {
                 </h2>
                 <div>
                     <label htmlFor="" className='text-xl text-white'>Name:</label>
-                    <input type="text" placeholder='Enter Name' className='w-full h-12 border-1 border-amber-400 px-3 py-2 rounded-md text-lg text-white' />
+                    <input type="text" placeholder='Enter Name' value={name} onChange={(e) => setName(e.target.value)} className='w-full h-12 border-1 border-amber-400 px-3 py-2 rounded-md text-lg text-white' />
                 </div>
 
                 <div>
                     <label htmlFor="" className='text-xl text-white'>Email:</label>
-                    <input type="text" placeholder='Enter Email' className='w-full h-12 border-1 border-amber-400 px-3 py-2 rounded-md text-lg text-white' />
+                    <input type="email" placeholder='Enter Your Email' value={email} onChange={(e) => setEmail(e.target.value)} className='w-full h-12 border-1 border-amber-400 px-3 py-2 rounded-md text-lg text-white' />
                 </div>
 
-                <div>
-                    <label htmlFor="" className='text-xl text-white'>Contact No:</label>
-                    <input type="text" placeholder='Enter Contact No' className='w-full h-12 border-1 border-amber-400 px-3 py-2 rounded-md text-lg text-white' />
-                </div>
-
-
-                <textarea name="" id="" rows={5} cols={50} placeholder='Enter Message...' className='w-full border-1 border-amber-400 text-white p-3 text-lg '></textarea>
+                <textarea name="" id="" rows={5} cols={50} value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Enter Message...' className='w-full border-1 border-amber-400 text-white p-3 text-lg '></textarea>
+                <button className='w-full py-2 rounded-md bg-amber-400 text-xl cursor-pointer' onClick={() => handleSubmit()}>Submit</button>
             </div>
 
         </div>
