@@ -4,15 +4,18 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { BsFillTelephoneFill, BsGlobe2 } from "react-icons/bs";
 import { FaMobileRetro } from "react-icons/fa6";
-import {  useState } from 'react';
+import { useState } from 'react';
 import emailjs from 'emailjs-com'
 
 const Contact = () => {
     const [name, setName] = useState<string>("")
     const [email, setEmail] = useState<string>("")
-    // const [number, setNumber] = useState<string>("")
+    const [number, setNumber] = useState<string>("")
     const [message, setMessage] = useState<string>("")
+    const [successMessage, setSuccessMessage] = useState<string>("")
 
+
+    const myEmail = "virtualtour045@gmail.com"
 
     const handleSubmit = () => {
         // e.preventDefault()
@@ -20,14 +23,20 @@ const Contact = () => {
         console.log(email)
         console.log(message)
 
-        emailjs.send("service_o3jlica", "template_2a9i2tr", {
+        emailjs.send("service_2zgjmtn", "template_va4rtrd", {
+            to_email: myEmail,
             from_name: name,
             from_email: email,
             message: message,
+            from_number: number
         },
-            "qF0SPfgPtEeerxnOs"
+            "5d7axtmaKuHWxU0SR"
         )
-            .then((res) => console.log(res.status))
+            .then((res) => {
+                if (res.status === 200) {
+                    setSuccessMessage("Email Sent Successfull")
+                }
+            })
             .catch((err) => console.log(err));
 
     }
@@ -71,6 +80,7 @@ const Contact = () => {
 
 
             <div className='w-[40%] grid gap-2.5 mx-auto mt-20 py-5 px-8 bg-gray-900 rounded-md mb-2'>
+                {successMessage ? <p className='bg-amber-500 text-2xl text-white text-center rounded-sm py-1.5'>{successMessage}</p> : ""}
                 <h2 className='text-amber-400 text-2xl font-bold text-center pt-5'>
                     DIRECT MESSAGE
                 </h2>
@@ -84,8 +94,13 @@ const Contact = () => {
                     <input type="email" placeholder='Enter Your Email' value={email} onChange={(e) => setEmail(e.target.value)} className='w-full h-12 border-1 border-amber-400 px-3 py-2 rounded-md text-lg text-white' />
                 </div>
 
+                <div>
+                    <label htmlFor="" className='text-xl text-white'>Number:</label>
+                    <input type="email" placeholder='Enter Your Number' value={number} onChange={(e) => setNumber(e.target.value)} className='w-full h-12 border-1 border-amber-400 px-3 py-2 rounded-md text-lg text-white' />
+                </div>
+
                 <textarea name="" id="" rows={5} cols={50} value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Enter Message...' className='w-full border-1 border-amber-400 text-white p-3 text-lg '></textarea>
-                <button className='w-full py-2 rounded-md bg-amber-400 text-xl cursor-pointer' onClick={() => handleSubmit()}>Submit</button>
+                <button className='w-full py-2 rounded-md bg-amber-400 text-xl cursor-pointer hover:bg-amber-500' onClick={() => handleSubmit()}>Submit</button>
             </div>
 
         </div>
