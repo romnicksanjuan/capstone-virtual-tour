@@ -80,7 +80,7 @@ const Contact = () => {
 
 
             <div className='w-[40%] grid gap-2.5 mx-auto mt-20 py-5 px-8 bg-gray-900 rounded-md mb-2'>
-                {successMessage ? <p className='bg-amber-500 text-2xl text-white text-center rounded-sm py-1.5'>{successMessage}</p> : ""}
+                {successMessage ? <p className='bg-amber-500 text-2xl text-white text-center rounded-sm py-2'>{successMessage}</p> : ""}
                 <h2 className='text-amber-400 text-2xl font-bold text-center pt-5'>
                     DIRECT MESSAGE
                 </h2>
