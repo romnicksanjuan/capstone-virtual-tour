@@ -79,28 +79,28 @@ const Contact = () => {
 
 
 
-            <div className='w-[40%] grid gap-2.5 mx-auto mt-20 py-5 px-8 bg-gray-900 rounded-md mb-2'>
+            <div className='w-[40%] grid gap-2.5 mx-auto mt-10 py-2 px-8 bg-gray-900 rounded-md mb-2'>
                 {successMessage ? <p className='bg-amber-500 text-2xl text-white text-center rounded-sm py-2'>{successMessage}</p> : ""}
-                <h2 className='text-amber-400 text-2xl font-bold text-center pt-5'>
+                <h2 className='text-amber-400 text-2xl font-bold text-center pt-2'>
                     DIRECT MESSAGE
                 </h2>
                 <div>
-                    <label htmlFor="" className='text-xl text-white'>Name:</label>
-                    <input type="text" placeholder='Enter Name' value={name} onChange={(e) => setName(e.target.value)} className='w-full h-12 border-1 border-amber-400 px-3 py-2 rounded-md text-lg text-white' />
+                    <label htmlFor="" className='text-md text-white'>Name:</label>
+                    <input type="text" placeholder='Enter Name' value={name} onChange={(e) => setName(e.target.value)} className='w-full  border-1 border-amber-400 px-3 py-2 rounded-md text-md text-white' />
                 </div>
 
                 <div>
-                    <label htmlFor="" className='text-xl text-white'>Email:</label>
-                    <input type="email" placeholder='Enter Your Email' value={email} onChange={(e) => setEmail(e.target.value)} className='w-full h-12 border-1 border-amber-400 px-3 py-2 rounded-md text-lg text-white' />
+                    <label htmlFor="" className='text-md text-white'>Email:</label>
+                    <input type="email" placeholder='Enter Your Email' value={email} onChange={(e) => setEmail(e.target.value)} className='w-full border-1 border-amber-400 px-3 py-2 rounded-md text-md text-white' />
                 </div>
 
                 <div>
-                    <label htmlFor="" className='text-xl text-white'>Number:</label>
-                    <input type="email" placeholder='Enter Your Number' value={number} onChange={(e) => setNumber(e.target.value)} className='w-full h-12 border-1 border-amber-400 px-3 py-2 rounded-md text-lg text-white' />
+                    <label htmlFor="" className='text-md text-white'>Number:</label>
+                    <input type="email" placeholder='Enter Your Number' value={number} onChange={(e) => setNumber(e.target.value)} className='w-full border-1 border-amber-400 px-2 py-2 rounded-md text-md text-white' />
                 </div>
 
-                <textarea name="" id="" rows={5} cols={50} value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Enter Message...' className='w-full border-1 border-amber-400 text-white p-3 text-lg '></textarea>
-                <button className='w-full py-2 rounded-md bg-amber-400 text-xl cursor-pointer hover:bg-amber-500' onClick={() => handleSubmit()}>Submit</button>
+                <textarea name="" id="" rows={5} cols={50} value={message} onChange={(e) => setMessage(e.target.value)} placeholder='Enter Message...' className='w-full border-1 border-amber-400 text-white p-3 text-md '></textarea>
+                <button className='w-full py-2 rounded-md bg-amber-400 text-md cursor-pointer hover:bg-amber-500' onClick={() => handleSubmit()}>Submit</button>
             </div>
 
         </div>
