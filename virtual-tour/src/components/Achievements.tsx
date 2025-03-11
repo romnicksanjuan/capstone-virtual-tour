@@ -32,8 +32,8 @@ const Achievements = () => {
 
 
 
-        <div className='w-full max-w-3xl flex justify-center mx-auto p-5 rounded-md bg-gray-900'>
-          <div className='w-full mx-auto p-2 grid grid-cols-1 gap-10'>
+        <div className='w-full max-w-[80%] flex justify-center mx-auto p-5 rounded-md bg-gray-900'>
+          <div className='w-full mx-auto p-2 grid grid-cols-2 gap-10 '>
             <div>
               <p className='text-black text-2xl text-center my-4 bg-amber-400 p-4 rounded-md'>Celebrates Ceguera Technological Colleges, Inc.'s participation in the Tinagba Festival 2025.</p>
               <img src={img1} alt="" className='w-full h-auto rounded-md' />
@@ -70,26 +70,31 @@ const Achievements = () => {
         </div>
 
 
-        <div className='w-full max-w-3xl flex justify-center mx-auto p-5 rounded-md bg-gray-900'>
-          <div className='relative w-full  mx-auto overflow-hidden rounded-lg shadow-lg'>
+        <div className='relative w-full max-w-[80%] flex justify-center mx-auto p-5 rounded-md bg-gray-900'>
+          <div className='w-full max-w-3xl flex justify-center mx-auto p-5 rounded-md'>
+            <div className=' w-full  mx-auto overflow-hidden rounded-lg shadow-lg'>
 
-            <div
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-              {images ? images.map((img, index) => (
-                <img key={index} src={img} alt="" className='w-full h-auto' />
-              )) : ''}
-            </div>
+              <div
+                className="flex transition-transform duration-500 ease-in-out"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              >
+                {images ? images.map((img, index) => (
+                  <img key={index} src={img} alt="" className='w-full h-auto' />
+                )) : ''}
+              </div>
 
-            <div className='absolute top-1/2 -translate-y-1/2 left-4 cursor-pointer' onClick={() => hanldeLeft()}>
-              < FaChevronCircleLeft size={40} color='black' />
-            </div>
-
-            <div className='absolute top-1/2 -translate-y-1/2 right-4 cursor-pointer' onClick={() => hanldeRight()}>
-              < FaChevronCircleRight size={40} color='black' />
             </div>
           </div>
+
+
+          <div className='absolute top-1/2 -translate-y-1/2 left-28 cursor-pointer' onClick={() => hanldeLeft()}>
+            < FaChevronCircleLeft size={40} color='white' />
+          </div>
+
+          <div className='absolute top-1/2 -translate-y-1/2 right-28 cursor-pointer' onClick={() => hanldeRight()}>
+            < FaChevronCircleRight size={40} color='white' />
+          </div>
+
         </div>
 
 

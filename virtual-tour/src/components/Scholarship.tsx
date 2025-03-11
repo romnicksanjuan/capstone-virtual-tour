@@ -6,6 +6,65 @@ const Scholarship = () => {
     <div className='w-full h-auto'>
       <NavBar />
       <div className='my-5'>
+
+        <div className='border-t-6 border-t-amber-400 bg-black my-2 '>
+          <h2 className='py-3 px-10 text-white text-2xl text-center'>SCHOLARSHIP GRANTS</h2>
+        </div>
+
+        <div className='w-full max-w-4xl mx-auto bg-gray-900 px-10 pt-2 pb-10 rounded-md'>
+          <h2 className='text-black text-3xl py-2 text-center font-bold bg-amber-400 font-serif my-10 rounded-md'>
+            CEGUERA Scholarship Program
+          </h2>
+          <p className='text-2xl text-white'>
+            ✅ Ceguera Marching Band Scholarship
+          </p>
+          <p className='text-2xl text-white'>
+            ✅ CTC Majorettes Scholarship
+          </p>
+          <p className='text-2xl text-white'>
+            ✅ CTC Barangay Official Scholarship
+          </p>
+          <p className='text-2xl text-white'>
+            ✅ Cash Discount
+          </p>
+
+
+          <h2 className='text-black text-3xl py-2 text-center font-bold bg-amber-400 font-serif my-10 rounded-md'>
+            We Accept Scholarship grants from:
+          </h2>
+          <p className='text-2xl text-white'>
+            ✅ UniFAST
+            <p>
+              ●  Tertiary Education Subsidy
+            </p>
+            <p>
+              ●   Tulong Dunong
+            </p>
+          </p>
+          <p className='text-2xl text-white'>
+            ✅ CHED StuFAP
+          </p>
+          <p className='text-2xl text-white'>
+            ✅ Foster Parents Scholarship
+          </p>
+          <p className='text-2xl text-white'>
+            ✅ OWWA
+          </p>
+          <p className='text-2xl text-white'>
+            ✅ Provincial Government
+          </p>
+          <p className='text-2xl text-white'>
+            ✅ Congressional District
+          </p>
+          <p className='text-2xl text-white'>
+            ✅ TESDA-TWSP
+          </p>
+          <p className='text-2xl text-white'>
+            ✅ TESDA-PESP
+          </p>
+        </div>
+
+
         <div className='border-t-6 border-t-amber-400 bg-black my-2 '>
           <h2 className='py-3 px-10 text-white text-2xl text-center'>SENIOR HIGHSCHOOL SCHOLARSHIPS</h2>
         </div>

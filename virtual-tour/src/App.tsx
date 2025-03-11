@@ -8,6 +8,8 @@ import Achievements from './components/Achievements'
 import Contact from './components/Contact'
 import Scholarship from './components/Scholarship'
 import Test from './components/Test'
+// import Acads from './components/Acads'
+import Rules from './components/Rules'
 
 function App() {
 
@@ -16,13 +18,14 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-          <Route path='/' element={<Home />}/>
-          <Route path='/academics' element={<Academic />}/>
-          <Route path='/achievements' element={<Achievements />}/>
-          <Route path='/about' element={<About />}/>
-          <Route path='/contact' element={<Contact />}/>
-          <Route path='/scholarships' element={<Scholarship />}/>
-          <Route path='/test' element={<Test />}/>
+          <Route path='/' element={<Home />} />
+          <Route path='/academics' element={<Academic />} />
+          <Route path='/achievements' element={<Achievements />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/scholarships' element={<Scholarship />} />
+          <Route path='/test' element={<Test />} />
+          <Route path='/rules' element={<Rules />} />
         </Routes>
       </BrowserRouter>
     </>

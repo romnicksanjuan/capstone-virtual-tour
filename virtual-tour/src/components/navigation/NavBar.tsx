@@ -22,6 +22,7 @@ const NavBar = () => {
         <Link to={'/scholarships'} className='text-xl text-white  hover:border-b-2 border-b-white px-4 py-2 hover:text-amber-400 '>Scholarships</Link>
         <Link to={'/achievements'} className='text-xl text-white hover:border-b-2 border-b-white px-4 py-2 hover:text-amber-400 '>Achievements</Link>
         <Link to={'/about'} className='text-xl text-white  hover:border-b-2 border-b-white px-4 py-2 hover:text-amber-400 '>About</Link>
+        <Link to={'/rules'} className='text-xl text-white  hover:border-b-2 border-b-white px-4 py-2 hover:text-amber-400 '>Rules</Link>
         <Link to={'/contact'} className='text-xl text-white  hover:border-b-2 border-b-white px-4 py-2 hover:text-amber-400 '>Contact Us</Link>
       </nav>
     </>

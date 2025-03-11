@@ -1,6 +1,14 @@
 import { Link } from 'react-router-dom'
 import NavBar from './navigation/NavBar'
-
+import bsoa from "../assets/banners/9.jpg"
+import bsba from "../assets/banners/8.jpg"
+import bsit from "../assets/banners/7.jpg"
+import bet from "../assets/banners/11.jpg"
+import btvted from "../assets/banners/14.jpg"
+import btled from "../assets/banners/15.jpg"
+import crim from "../assets/banners/10.jpg"
+import humss_gas_abm from "../assets/banners/5.jpg"
+import shs from "../assets/banners/4.jpg"
 const Academic = () => {
     return (
         <div className='w-full h-auto'>
@@ -20,23 +28,38 @@ const Academic = () => {
 
             <div className='grid grid-cols-3 place-items-center w-[80%] mt-10 mx-auto'>
 
-                <div className='h-50 w-sm p-2 grid place-items-center rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer'>
-                    <h2 className='text-md text-center text-black font-bold'>BACHELOR OF SCIENCE IN OFFICE ADMINISTRATION (BSOA)</h2>
-                    <h2 className='text-md text-center text-black'>MAJOR IN: MARKETING MANAGEMENT</h2>
+                <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
+                    {/* Background Image */}
+                    <img src={bsoa} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+
+                    {/* Text Overlay */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                        <h2 className="text-md font-bold text-black">BACHELOR OF SCIENCE IN OFFICE ADMINISTRATION (BSOA)</h2>
+                        <h2 className="text-md text-black">MAJOR IN: MARKETING MANAGEMENT</h2>
+                    </div>
                 </div>
 
-                <div className='h-50 w-sm p-2 flex items-center rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer'>
-                    <h2 className='text-md text-center text-black font-bold'>BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (BSBA)</h2>
-                    {/* <div className='flex justify-center mt-6'>
-                        <button className='h-8 w-25 rouned-sm bg-amber-300 text-black'>Read More</button>
-                    </div> */}
+
+                <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
+                    {/* Background Image */}
+                    <img src={bsba} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+
+                    {/* Text Overlay */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                        <h2 className="text-md font-bold text-black">BACHELOR OF SCIENCE IN BUSINESS ADMINISTRATION (BSBA)</h2>
+                    </div>
                 </div>
 
-                <div className='h-50 w-sm p-2 flex items-center rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer'>
-                    <h2 className='text-md text-center text-black font-bold'>BACHELOR OF SCIENCE IN INFOTMATION TECHNOLOGY (BSIT)</h2>
-                    {/* <div className='flex justify-center mt-6'>
-                        <button className='h-8 w-25 rouned-sm bg-amber-300 text-black'>Read More</button>
-                    </div> */}
+
+
+                <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
+                    {/* Background Image */}
+                    <img src={bsit} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+
+                    {/* Text Overlay */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                        <h2 className="text-md font-bold text-black">BACHELOR OF SCIENCE IN INFOTMATION TECHNOLOGY (BSIT)</h2>
+                    </div>
                 </div>
 
             </div>
@@ -47,12 +70,17 @@ const Academic = () => {
                 <h2 className='py-3 px-10 text-white text-2xl '>COLLEGE OF TECHNICAL EDUCATION</h2>
             </div>
 
+
             <div className='grid grid-cols-3 gap-2 place-items-center w-[80%] mt-10 mx-auto'>
 
-                <div className='w-sm h-50 p-2 grid rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer'>
-                    <h2 className='text-md text-center text-black font-bold'>BACHELOR OF ENGINEERING TECHNOLOGY (BET)</h2>
 
-                    <div className='flex'>
+                <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
+                    {/* Background Image */}
+                    <img src={bet} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+
+                    {/* Text Overlay */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                        <h2 className="text-md font-bold text-black">BACHELOR OF ENGINEERING TECHNOLOGY (BET)</h2>
                         <div className='w-[30%]'>
                             <h2 className='text-md text-center text-black'>MAJOR IN:</h2>
                         </div>
@@ -62,38 +90,39 @@ const Academic = () => {
                             <h2 className='text-md text-center text-black'>ELECTRICAL TECHNOLOGY</h2>
                         </div>
                     </div>
-                    {/* <div className='flex justify-center mt-6'>
-                        <button className='h-8 w-25 rouned-sm bg-amber-300 text-black'>Read More</button>
-                    </div> */}
                 </div>
 
-                <div className='p-2 w-sm grid place-items-center rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer'>
-                    <h2 className='text-md text-center text-black font-bold'>BACHELOR OF TECHNICAL VOCATIONAL TEACHER EDUCATION (BTVTed)</h2>
-                    {/* <div className='flex justify-center mt-6'>
-                        <button className='h-8 w-25 rouned-sm bg-amber-300 text-black'>Read More</button>
-                    </div> */}
 
-                    <div className='flex'>
+                <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
+                    {/* Background Image */}
+                    <img src={btvted} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+
+                    {/* Text Overlay */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                        <h2 className="text-md font-bold text-black">BACHELOR OF TECHNICAL VOCATIONAL TEACHER EDUCATION (BTVTEd)</h2>
                         <div className='w-[30%]'>
-                            <h2 className='text-md text-center text-black'>MAJOR IN:</h2>
+                            <h2 className='text-sm text-center text-black'>MAJOR IN:</h2>
                         </div>
                         <div className='w-[70%]'>
                             <h2 className='text-sm text-center text-black'>AUTOMOTIVE TECHNOLOGY</h2>
-                            <h2 className='text-sm text-center text-black'>ELECTRONICS TECHNOLOGY</h2>
-                            <h2 className='text-sm text-center text-black'>ELECTRICAL TECHNOLOGY</h2>
-                            <h2 className='text-sm text-center text-black'>FOOD AND SERVICE MANAGEMENT</h2>
-                            <h2 className='text-sm text-center text-black'>COMPUTER HARDWARE SERVICING</h2>
+                            <h2 className='text-xs text-center text-black'>ELECTRONICS TECHNOLOGY</h2>
+                            <h2 className='text-xs text-center text-black'>ELECTRICAL TECHNOLOGY</h2>
+                            <h2 className='text-xs text-center text-black'>FOOD AND SERVICE MANAGEMENT</h2>
+                            <h2 className='text-xs text-center text-black'>COMPUTER HARDWARE SERVICING</h2>
                         </div>
                     </div>
                 </div>
 
-                <div className='h-50 w-sm p-2 grid place-items-center rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer'>
-                    <h2 className='text-md text-center text-black font-bold'>BACHELOR OF TECHNOLOGY LIVELIHOOD EDUCATION (BTLed)</h2>
-                    {/* <div className='flex justify-center mt-6'>
-                        <button className='h-8 w-25 rouned-sm bg-amber-300 text-black'>Read More</button>
-                    </div> */}
 
-                    <div className='flex'>
+
+
+                <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
+                    {/* Background Image */}
+                    <img src={btled} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+
+                    {/* Text Overlay */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                        <h2 className="text-md font-bold text-black">BACHELOR OF TECHNOLOGY LIVELIHOOD EDUCATION (BTLEd)</h2>
                         <div className='w-[30%]'>
                             <h2 className='text-md text-center text-black'>MAJOR IN:</h2>
                         </div>
@@ -104,7 +133,6 @@ const Academic = () => {
                         </div>
                     </div>
                 </div>
-
             </div>
 
 
@@ -114,13 +142,17 @@ const Academic = () => {
             </div>
 
             <div className='grid grid-cols-1 place-items-center w-[80%] mt-10 mx-auto'>
-                <div className='h-50 w-sm p-5 grid place-items-center rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer'>
-                    <h2 className='text-md text-center text-black font-bold'>BACHELOR OF SCIENCE IN CRIMINOLOGY (BSCrim)</h2>
-                    {/* <div className='flex justify-center mt-6'>
-                        <button className='h-8 w-25 rouned-sm bg-amber-300 text-black'>Read More</button>
-                    </div> */}
-                </div>
 
+                <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
+                    {/* Background Image */}
+                    <img src={crim} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+
+                    {/* Text Overlay */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                        <h2 className="text-md font-bold text-black">BACHELOR OF SCIENCE IN CRIMINOLOGY (BSCrim)</h2>
+
+                    </div>
+                </div>
             </div>
 
 
@@ -133,26 +165,37 @@ const Academic = () => {
             </div>
 
             <div className='grid grid-cols-2 place-items-center w-[80%] my-10 mx-auto'>
-                <div className='h-50 w-sm p-2 grid place-items-center rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer'>
-                    <h2 className='text-md text-center text-black font-bold'>ACADEMIC TRACK</h2>
-                    {/* <div className='flex justify-center mt-6'>
-                        <button className='h-8 w-25 rouned-sm bg-amber-300 text-black'>Read More</button>
-                    </div> */}
 
-                    <h2 className='text-md text-center text-black'>ACCOUNTANCY AND BUSINESS MANAGEMENT (ABM)</h2>
-                    <h2 className='text-md text-center text-black'>GENERAL ACADEMIC STRAND (GAS)</h2>
-                    <h2 className='text-md text-center text-black'>HUMANITIES AND SOCIAL SCIENCES (HUMSS)</h2>
+                <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
+                    {/* Background Image */}
+                    <img src={humss_gas_abm} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+
+                    {/* Text Overlay */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                        <h2 className="text-md font-bold text-black">ACADEMIC TRACK</h2>
+                        <div className='w-[70%]'>
+                            <h2 className='text-md text-center text-black'>ACCOUNTANCY AND BUSINESS MANAGEMENT (ABM)</h2>
+                            <h2 className='text-md text-center text-black'>GENERAL ACADEMIC STRAND (GAS)</h2>
+                            <h2 className='text-md text-center text-black'>HUMANITIES AND SOCIAL SCIENCES (HUMSS)</h2>
+                        </div>
+                    </div>
                 </div>
 
-                <div className='h-50 w-sm p-2 grid place-items-center rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer'>
-                    <h2 className='text-md text-center text-black font-bold'>TECHNICAL VOCATIONAL AND LIVELIHOOD TRACK (TVL) (BTVTed)</h2>
-                    {/* <div className='flex justify-center mt-6'>
-                        <button className='h-8 w-25 rouned-sm bg-amber-300 text-black'>Read More</button>
-                    </div> */}
-                    <h2 className='text-md text-center text-black'>AUTOMOTIVE NC I AND NC II</h2>
-                    <h2 className='text-md text-center text-black'>COMPUTER SYSTEMS AND SERVICING NC II</h2>
-                    <h2 className='text-md text-center text-black'>ELECTRICAL INSTALLATION AND MAINTAINANCE NC II</h2>
-                    <h2 className='text-md text-center text-black'>ELECTRONICS PRODUCTS ASSEMBLY NC II</h2>
+
+                <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
+                    {/* Background Image */}
+                    <img src={shs} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+
+                    {/* Text Overlay */}
+                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
+                        <h2 className="text-md font-bold text-black">TECHNICAL VOCATIONAL AND LIVELIHOOD TRACK (TVL)</h2>
+                        <div className='w-[70%]'>
+                            <h2 className='text-sm text-center text-black'>AUTOMOTIVE NC I AND NC II</h2>
+                            <h2 className='text-sm text-center text-black'>COMPUTER SYSTEMS AND SERVICING NC II</h2>
+                            <h2 className='text-sm text-center text-black'>ELECTRICAL INSTALLATION AND MAINTAINANCE NC II</h2>
+                            <h2 className='text-sm text-center text-black'>ELECTRONICS PRODUCTS ASSEMBLY NC II</h2>
+                        </div>
+                    </div>
                 </div>
 
             </div>
