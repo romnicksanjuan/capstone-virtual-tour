@@ -30,7 +30,7 @@ const Academic = () => {
 
                 <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
                     {/* Background Image */}
-                    <img src={bsoa} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+                    <img src={'https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/9.jpg?alt=media&token=1bdf1ebf-9c3f-47b0-a352-63d921b92955'} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
 
                     {/* Text Overlay */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
@@ -42,7 +42,7 @@ const Academic = () => {
 
                 <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
                     {/* Background Image */}
-                    <img src={bsba} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+                    <img src={'https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/8.jpg?alt=media&token=e3a241f7-f7b1-459f-8add-95fef644a069'} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
 
                     {/* Text Overlay */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
@@ -54,7 +54,7 @@ const Academic = () => {
 
                 <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
                     {/* Background Image */}
-                    <img src={bsit} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+                    <img src={'https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/7.jpg?alt=media&token=832e39db-1ac4-46ea-99bb-b5e54ea66bcb'} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
 
                     {/* Text Overlay */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
@@ -76,7 +76,7 @@ const Academic = () => {
 
                 <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
                     {/* Background Image */}
-                    <img src={bet} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+                    <img src={'https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/11.jpg?alt=media&token=3a1c12cb-b19d-47ed-9bf6-c69067c34e46'} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
 
                     {/* Text Overlay */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
@@ -95,7 +95,7 @@ const Academic = () => {
 
                 <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
                     {/* Background Image */}
-                    <img src={btvted} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+                    <img src={'https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/14.jpg?alt=media&token=83398c9a-0f84-4655-a8f7-26d1d573d038'} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
 
                     {/* Text Overlay */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
@@ -118,7 +118,7 @@ const Academic = () => {
 
                 <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
                     {/* Background Image */}
-                    <img src={btled} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+                    <img src={'https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/15.jpg?alt=media&token=6d51b4eb-5e2b-46af-9881-d27aff51bf01'} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
 
                     {/* Text Overlay */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
@@ -145,7 +145,7 @@ const Academic = () => {
 
                 <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
                     {/* Background Image */}
-                    <img src={crim} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+                    <img src={'https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/10.jpg?alt=media&token=9ec3fa2c-bdf4-481c-821f-c6134240a037'} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
 
                     {/* Text Overlay */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
@@ -168,7 +168,7 @@ const Academic = () => {
 
                 <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
                     {/* Background Image */}
-                    <img src={humss_gas_abm} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+                    <img src={'https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/5.jpg?alt=media&token=fb1eb10b-eedf-460e-bd40-72ffe4417fe0'} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
 
                     {/* Text Overlay */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
@@ -184,7 +184,7 @@ const Academic = () => {
 
                 <div className="relative w-80 h-52 overflow-hidden rounded-md border-2 bg-gray-200 border-amber-400 hover:scale-110 transition duration-300 cursor-pointer">
                     {/* Background Image */}
-                    <img src={shs} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
+                    <img src={'https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/4.jpg?alt=media&token=5423fab1-cda1-4ecf-92b8-baa9b83d6bb8'} alt="BSOA" className="w-full h-full object-cover grayscale opacity-15" />
 
                     {/* Text Overlay */}
                     <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4">
