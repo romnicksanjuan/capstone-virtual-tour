@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom'
 import NavBar from './navigation/NavBar'
-import bsoa from "../assets/banners/9.jpg"
-import bsba from "../assets/banners/8.jpg"
-import bsit from "../assets/banners/7.jpg"
-import bet from "../assets/banners/11.jpg"
-import btvted from "../assets/banners/14.jpg"
-import btled from "../assets/banners/15.jpg"
-import crim from "../assets/banners/10.jpg"
-import humss_gas_abm from "../assets/banners/5.jpg"
-import shs from "../assets/banners/4.jpg"
+// import bsoa from "../assets/banners/9.jpg"
+// import bsba from "../assets/banners/8.jpg"
+// import bsit from "../assets/banners/7.jpg"
+// import bet from "../assets/banners/11.jpg"
+// import btvted from "../assets/banners/14.jpg"
+// import btled from "../assets/banners/15.jpg"
+// import crim from "../assets/banners/10.jpg"
+// import humss_gas_abm from "../assets/banners/5.jpg"
+// import shs from "../assets/banners/4.jpg"
 const Academic = () => {
     return (
         <div className='w-full h-auto'>
