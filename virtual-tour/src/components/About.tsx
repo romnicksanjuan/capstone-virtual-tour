@@ -1,12 +1,12 @@
 
 import NavBar from './navigation/NavBar'
-import mission from "../assets/mission-vision/mission.png"
-import vision from "../assets/mission-vision/vision.png"
-import goals from "../assets/mission-vision/goals.png"
+// import mission from "../assets/mission-vision/mission.png"
+// import vision from "../assets/mission-vision/vision.png"
+// import goals from "../assets/mission-vision/goals.png"
 
-import ctc_org from "../assets/org structure/ctc-org-structure.png"
-import library_org from "../assets/org structure/library org structure.jpg"
-import otg_org from "../assets/org structure/otg-org-structure.jpg"
+// import ctc_org from "../assets/org structure/ctc-org-structure.png"
+// import library_org from "../assets/org structure/library org structure.jpg"
+// import otg_org from "../assets/org structure/otg-org-structure.jpg"
 
 const About = () => {
     return (
@@ -18,15 +18,15 @@ const About = () => {
 
             <div className='grid grid-cols-3  bg-gray-900 p-2 place-items-center gap-1.5 w-[80%] mx-auto mt-5 rounded-md'>
                 <div className='px-5 py-5  rounded-md '>
-                    <img src={mission} alt="" className='w-lg h-auto' />
+                    <img src={"https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/mission-vision%2Fmission.png?alt=media&token=451b2789-3c42-42ef-920c-dfb8eecafbb5"} alt="" className='w-lg h-auto' />
                 </div>
 
                 <div className='px-5 py-5 rounded-md '>
-                    <img src={vision} alt="" className='w-lg h-auto' />
+                    <img src={"https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/mission-vision%2Fvision.png?alt=media&token=3929df09-6f29-4ce4-8ca5-b6d31bf670c3"} alt="" className='w-lg h-auto' />
                 </div>
 
                 <div className='px-5 py-5 rounded-md '>
-                    <img src={goals} alt="" className='w-lg h-auto' />
+                    <img src={"https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/mission-vision%2Fgoals.png?alt=media&token=8abaeb26-5d39-4ba4-9f50-5abbcff67773"} alt="" className='w-lg h-auto' />
                 </div>
             </div>
 
@@ -41,7 +41,7 @@ const About = () => {
             <div className='grid grid-cols-1  bg-gray-900 p-2 place-items-center gap-1.5 w-[80%] mx-auto mt-5 rounded-md'>
 
                 <div className='px-5 py-5  rounded-md '>
-                    <img src={ctc_org} alt="" className='w-xl h-auto' />
+                    <img src={"https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/org%20structure%2Fctc-org-structure.png?alt=media&token=4862ccc4-c7f0-4607-b767-3507236c66ba"} alt="" className='w-xl h-auto' />
                 </div>
             </div>
             {/* otg structure */}
@@ -51,7 +51,7 @@ const About = () => {
 
             <div className='grid grid-cols-1  bg-gray-900 p-2 place-items-center gap-1.5 w-[80%] mx-auto mt-5 rounded-md'>
                 <div className='px-5 py-5 rounded-md '>
-                    <img src={otg_org} alt="" className='w-lg h-auto' />
+                    <img src={"https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/org%20structure%2Fotg-org-structure.jpg?alt=media&token=edacc75d-2355-4533-a3e1-3157aa4282e1"} alt="" className='w-lg h-auto' />
                 </div>
             </div>
 
@@ -63,7 +63,7 @@ const About = () => {
 
             <div className='grid grid-cols-1  bg-gray-900 p-2 place-items-center gap-1.5 w-[80%] mx-auto mt-5 rounded-md'>
                 <div className='px-5 py-5  rounded-md '>
-                    <img src={library_org} alt="" className='w-xl h-auto' />
+                    <img src={"https://firebasestorage.googleapis.com/v0/b/videos-27286.appspot.com/o/org%20structure%2Flibrary%20org%20structure.jpg?alt=media&token=50a35860-c4f8-44a5-98dc-39b6d8b94ec3"} alt="" className='w-xl h-auto' />
                 </div>
             </div>
 
