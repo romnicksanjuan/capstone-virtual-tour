@@ -59,6 +59,7 @@ const Home = () => {
 
         <div className='w-[80%] flex justify-center h-xl  mx-auto mt-2'>
           {/* <img src={home_image} alt="" width={'100%'} height={'auto'} /> */}
+
           <iframe width="90%" height="630" frameBorder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowFullScreen scrolling="no"
             src="https://kuula.co/share/collection/7b611?logo=1&info=1&fs=1&vr=0&thumbs=-1"></iframe>
         </div>
