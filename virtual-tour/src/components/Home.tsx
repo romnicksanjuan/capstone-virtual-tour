@@ -1,7 +1,7 @@
 
 import NavBar from './navigation/NavBar'
 // import home_image from "../assets/sample.jpg"
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import VirtualTour from './Virtual Tour'
 // import banner1 from "../assets/banners/1.jpg"
 // import banner2 from "../assets/banners/2.jpg"
