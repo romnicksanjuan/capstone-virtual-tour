@@ -64,10 +64,9 @@ const Home = () => {
           <VirtualTour />
         </div>
 
-        <div className='flex justify-center items-center my-10 cursor-pointer'>
-          {/* <button className='w-64 h-12 rounded-md bg-amber-300 text-xl hover:bg-amber-500 border-2'>TAKE A TOUR</button> */}
+        {/* <div className='flex justify-center items-center my-10 cursor-pointer'>
           <Link to={"https://kuula.co/share/collection/7b611?logo=1&info=1&fs=1&vr=0&thumbs=-1"} className=' px-4 py-2 rounded-md bg-amber-300 text-xl hover:bg-amber-500 border-2' >TAKE A TOUR</Link>
-        </div>
+        </div> */}
       </div>
 
 
