@@ -2,6 +2,7 @@
 import NavBar from './navigation/NavBar'
 // import home_image from "../assets/sample.jpg"
 import { Link } from 'react-router-dom'
+import VirtualTour from './Virtual Tour'
 // import banner1 from "../assets/banners/1.jpg"
 // import banner2 from "../assets/banners/2.jpg"
 // import banner3 from "../assets/banners/3.jpg"
@@ -57,11 +58,10 @@ const Home = () => {
         </div>
 
 
-        <div className='w-[80%] flex justify-center h-xl  mx-auto mt-2'>
+        <div className='w-[80%] flex justify-center h-auto  mx-auto mt-2'>
           {/* <img src={home_image} alt="" width={'100%'} height={'auto'} /> */}
 
-          <iframe width="90%" height="630" frameBorder="0" allow="xr-spatial-tracking; gyroscope; accelerometer" allowFullScreen scrolling="no"
-            src="https://kuula.co/share/collection/7b611?logo=1&info=1&fs=1&vr=0&thumbs=-1"></iframe>
+          <VirtualTour />
         </div>
 
         <div className='flex justify-center items-center my-10 cursor-pointer'>
