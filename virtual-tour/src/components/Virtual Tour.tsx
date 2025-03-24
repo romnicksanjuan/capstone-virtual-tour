@@ -9,7 +9,7 @@ const VirtualTour: React.FC = () => {
     script.setAttribute("data-path", "tours");
     script.setAttribute("data-is-self-hosted", "false");
     script.setAttribute("width", "100%");
-    script.setAttribute("height", "800px");
+    script.setAttribute("height", "640px");
 
     const container = document.getElementById("cloudpano-container");
     if (container) {
@@ -23,7 +23,7 @@ const VirtualTour: React.FC = () => {
     };
   }, []);
 
-  return <div id="cloudpano-container" style={{ width: "100%", height: "px" }} />;
+  return <div id="cloudpano-container" style={{ width: "100%", height: "px" , margin:'0 auto'}} />;
 };
 
 export default VirtualTour;
