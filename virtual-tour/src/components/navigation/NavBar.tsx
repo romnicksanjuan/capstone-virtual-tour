@@ -1,5 +1,5 @@
 
-import logo from "../../assets/ctc_logo.png"
+import logo from "../../assets/ctc-logoo.jpg"
 import { Link } from 'react-router-dom'
 
 const NavBar = () => {
